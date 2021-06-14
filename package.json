@@ -1,0 +1,22 @@
+{
+  "name": "node.samples.express4",
+  "version": "1.0.0",
+  "description": "A minimal sample app using Express 4 over Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanotaboada/node.samples.express4.git"
+  },
+  "author": "Nano Taboada <nanotaboada@msn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanotaboada/node.samples.express4/issues"
+  },
+  "homepage": "https://github.com/nanotaboada/node.samples.express4#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
