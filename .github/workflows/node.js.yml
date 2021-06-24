@@ -16,8 +16,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [12.x, 14.x]
+        # https://nodejs.org/en/about/releases/
+        # ----------------------------------------
+        # | Release | Status          | Codename |
+        # ----------------------------------------
+        # | v12     | Maintenance LTS | Erbium   |
+        # | v14     | Active LTS      | Fermium  |
+        # ----------------------------------------
 
     steps:
     - uses: actions/checkout@v2
