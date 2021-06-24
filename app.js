@@ -2,18 +2,20 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-const port = process.env.PORT || 9000;
+const router = express.Router();
 const books = fs.readFileSync('books.json');
 const songs = fs.readFileSync('songs.json');
 
-app.get('/books', (request, response) => {
-  response.status(200);
-  response.send(JSON.parse(books));
-});
+router.route('/books')
+  .get((request, response) => {
+    response.send(JSON.parse(books));
+  });
 
-app.get('/songs', (request, response) => {
-  response.status(200);
-  response.send(JSON.parse(songs));
-});
+router.route('/songs')
+  .get((request, response) => {
+    response.send(JSON.parse(songs));
+  });
 
-app.listen(port);
+app.use('/', router);
+
+app.listen(process.env.PORT || 8080);
