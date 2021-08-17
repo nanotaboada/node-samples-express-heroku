@@ -1,5 +1,5 @@
-const express = require('express');
-const fs = require('fs');
+import express from 'express';
+import fs from 'fs';
 
 const app = express();
 const router = express.Router();
@@ -8,14 +8,14 @@ const songs = fs.readFileSync('songs.json');
 
 router.route('/books')
   .get((request, response) => {
-    response.send(JSON.parse(books));
+    response.status(200).json(JSON.parse(books));
   });
 
 router.route('/songs')
   .get((request, response) => {
-    response.send(JSON.parse(songs));
+    response.status(200).json(JSON.parse(songs));
   });
 
 app.use('/', router);
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 3000);

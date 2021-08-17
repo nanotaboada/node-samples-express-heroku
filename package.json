@@ -1,8 +1,9 @@
 {
-  "name": "node.samples.express4",
+  "type": "module",
+  "name": "node-samples-express-heroku",
   "version": "1.0.0",
-  "description": "A minimal sample app using Express 4 over Node.js",
-  "main": "index.js",
+  "description": "A minimal sample app using Express 4 over Node.js deployed on Heroku",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Not yet implemented.\"",
@@ -10,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nanotaboada/node.samples.express4.git"
+    "url": "git+https://github.com/nanotaboada/node-samples-express-heroku.git"
   },
   "author": "Nano Taboada <nanotaboada@msn.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nanotaboada/node.samples.express4/issues"
+    "url": "https://github.com/nanotaboada/node-samples-express-heroku/issues"
   },
-  "homepage": "https://github.com/nanotaboada/node.samples.express4#readme",
+  "homepage": "https://github.com/nanotaboada/node-samples-express-heroku#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
