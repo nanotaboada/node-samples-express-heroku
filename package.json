@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/nanotaboada/node-samples-express-heroku#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "eslint": "^8.4.1",
